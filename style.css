@@ -1,0 +1,162 @@
+/* common to all */
+*{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+/* body style */
+body{
+    background-image: url(./bg-image.svg);
+    background-repeat: no-repeat;
+    height: 100vh;  
+    background-size: cover;
+}
+
+/* nav */
+nav .icon{
+    padding: 20px 90px;
+}
+/* intro */
+header{
+    width: 750px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.formTitle{
+    color: white;
+    text-align: center;
+    font-size: 4rem;
+    padding-bottom: 20px;
+    padding-top: 50px;
+}
+.formDesc{
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 50px
+}
+
+/* form style */
+
+.name{
+    grid-area: name;
+}
+.email{
+    grid-area: email;
+}
+.employees{
+    grid-area: employees;
+}
+.subject{
+    grid-area: subject;
+}
+.message{
+    grid-area: message;
+}
+.form{
+    width: 900px;
+    display: grid;
+    grid-template-areas: 
+    "name email"
+    "employees subject"
+    "message message"
+    "button button";
+    margin: 50px auto;
+    background-color:rgba(255, 255, 255, 0.2) ;
+    padding: 30px;
+    gap: 20px;
+    border-radius: 20px;
+}
+.form span>label{
+    font-size: 0.875rem;
+    color: white;
+}
+.form span>input, .form span>select{
+    width: 100%;
+    height: 50px;
+    border-radius: 20px;
+    border: none;
+    box-sizing: border-box;
+    padding: 0 20px;
+    margin: 10px 0;
+    font-weight: 700;
+}
+.form span>input::placeholder{
+    color: #CDD5E0;
+}
+
+.form span>textarea{
+    width: 100%;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 010px 20px;
+    margin: 10px 0;
+    font-weight: 700;
+}
+button{
+    width: 100%;
+    grid-area: button;
+    height: 50px;
+    border-radius: 20px;
+    border: none;
+    color: #4036A9;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+/* media queries */
+
+@media screen and (max-width:1024px) and (min-width:641px){
+    nav .icon{
+        padding: 20px;
+    }
+    body{
+        height: 200vh;
+    }
+    header{
+        width: 60%;
+    }
+    .formTitle{
+        font-size: 3rem;
+    }
+    .formDesc{
+        font-size: 1.2rem;
+        line-height: 30px;
+    }
+    .form{
+        width: 90vw;
+    }
+}
+
+@media screen and (max-width:640px) {
+    body{
+        height: 240vh;
+    }
+    nav .icon{
+        padding: 20px;
+    }
+    header{
+        width: 75%;
+    }
+    .formTitle{
+        font-size: 3rem;
+    }
+    .formDesc{
+        font-size: 1.2rem;
+        line-height: 30px;
+    }
+    .form{
+        width: 80vw;
+        grid-template-areas: 
+        "name"
+        "email"
+        "employees"
+        "subject"
+        "message"
+        "button";
+    }
+    
+    
+}

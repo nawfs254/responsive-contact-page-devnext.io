@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Contact Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <img src="./contact-form-icon.svg" alt="" class="icon">
+    </nav>
+    <header>
+        <h1 class="formTitle">
+            Interested in our business pricing?
+        </h1>
+        <p class="formDesc">
+            Fill out the form to view details and we’ll contact you as soon as possible.
+        </p>
+    </header>
+    <form action="" class="form">
+        <span class="name">
+            <label for="name">Name</label><br>
+            <input type="text" name="name" id="name" placeholder="Ethan Johnson">
+        </span>
+        <span class="email">
+            <label for="email">Company Email</label><br>
+            <input type="email" name="email" id="email" placeholder="ethan@johnson.com">
+        </span><br>
+        <span class="employees">
+            <label for="employees">Company size</label><br>
+            <select name="" id="employees">
+                <option value="1">50-100 employees</option>
+                <option value="2">100-500 employees</option>
+                <option value="3">500-1000 employees</option>
+                <option value="4">More than 1000 employees</option>
+            </select>
+        </span>
+        <span class="subject">
+            <label for="subject">Subject</label><br>
+            <select name="" id="subject">
+                <option value="1">Building Landing Pages</option>
+                <option value="2">Sign Up Pages</option>
+                <option value="3">Login Pages</option>
+                <option value="4">Checkout Pages</option>
+            </select>
+        </span><br>
+        <span class="message">
+            <label for="message">Message</label><br>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        </span>
+        <button>Contact Sales</button>
+    </form>
+</body>
+
+</html>
